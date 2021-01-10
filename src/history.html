@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="menuE">
+      <ul>
+        <li>
+          <a href="index.html">Make Call</a>
+        </li>
+        <li>
+          <a href="history.html">Call History</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <input
+      type="text"
+      name=""
+      id="searchHistory"
+      placeholder="Search number history"
+    />
+    <br />
+    <br />
+    <div id="showHistory"></div>
+  </body>
+
+  <script>
+    if (typeof module === "object") {
+      window.module = module;
+      module = undefined;
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script/script.js"></script>
+  <script>
+    if (window.module) module = window.module;
+  </script>
+
+  <script src="./script/backendHistory.js"></script>
+</html>

@@ -1,0 +1,158 @@
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 34px;
+}
+.menuE ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 31px;
+  margin-right: 4px;
+}
+.menu li a , .menuE li a{
+  text-decoration: none;
+  color: black;
+}
+.menu li a:hover , .menuE li a:hover{
+ color: red;
+}
+.class{
+	width: 260px;
+	height: 55px;
+	border: none;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	font-size: 18px
+}
+input[type="text"]{
+	width: 180px;
+}
+span{
+	background-color: #ddd;
+  font-size: 45px;
+  padding: 29px 45px;
+  border-radius: 50%;
+  margin: 10px 10px 15px 15px;
+}
+
+span:hover{
+  cursor:pointer;
+  background-color: rgb(61, 57, 246);
+  color: #ddd;
+}
+.row{
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+.inner-row{
+  display: flex;
+  justify-content: center;
+}
+#output{
+  font-size: 57px !important;
+  color: rgb(66, 71, 68);
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+.output-div{
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+.output-div button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.output-div button i{
+  font-size: 43px;
+}
+.output-div button i:hover{
+  cursor: pointer;
+  color: #000;
+}
+
+.call-div{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+.call-div button{
+  padding: 2%;
+  font-size: 66px;
+  color: #ffffff;
+  background-color: #0eb32e;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 24%; 
+}
+.contact-div{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+#btnSave{
+  width: 61%;
+  margin: auto;
+  padding: 1%;
+  background-color: blue;
+  color: white;
+  font-size: 30px;
+}
+#contactname{
+  padding: 1%;
+  width: 59%;
+  text-align: center;
+  margin: auto;
+  font-size: 28px;
+}
+.contactStyle{
+  text-align: center;
+  font-size: 30px;
+}
+.test{
+  text-align: center;
+  font-size: 26px;
+}
+#searchContact , #searchHistory{
+  width: 95%;
+  padding: 2%;
+  margin: auto;
+  text-align: center;
+  font-size: 23px;
+}
+.container{
+  background-color: #131414;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  margin-top: 6px;
+}
+/* .call_alert{
+  text-align: center;
+  background-color: aquamarine;
+  padding: 1%;
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  left: 10%;
+  display: none ; 
+}
+.call_alert button{
+  width: 65%;
+  margin: auto;
+  position: absolute;
+  left: 10%;
+  font-size: 19px;
+  color: white;
+  border-radius: 38px;
+  top: 32%;
+} */

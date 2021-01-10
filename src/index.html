@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home!</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="index.html">Make Call</a>
+        </li>
+        <li>
+          <a href="history.html">Call History</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <br />
+
+    <div class="output-div">
+      <input class="output" id="output" value="" type="text" disabled />
+      <button id="clear"><i class="fa fa-backspace"></i></button>
+    </div>
+    <br />
+    <br />
+
+    <div class="row">
+      <div class="inner-row">
+        <span class="span1">1</span>
+        <span class="span2">2</span>
+        <span class="span3">3</span>
+      </div>
+      <div class="inner-row">
+        <span class="span4">4</span>
+        <span class="span5">5</span>
+        <span class="span6">6</span>
+      </div>
+      <div class="inner-row">
+        <span class="span7">7</span>
+        <span class="span8">8</span>
+        <span class="span9">9</span>
+      </div>
+      <div class="inner-row">
+        <span class="spanstar">*</span>
+        <span class="span0">0</span>
+        <span class="span#">#</span>
+      </div>
+    </div>
+
+    <!-- <div class="call_alert">
+      <h1>Call in proggress ....</h1>
+      <button id="hang"><i class="fa fa-phone-square-alt"></i></button>
+    </div> -->
+
+    <div class="call-div">
+      <button id="call"><i class="fa fa-phone-square-alt"></i></button>
+    </div>
+    <br />
+    <br />
+
+    <div class="contact-div">
+      <input
+        type="text"
+        name=""
+        id="contactname"
+        placeholder="Enter your contact name"
+      />
+      <br /><br />
+      <button id="btnSave">save</button>
+    </div>
+  </body>
+  <script>
+    if (typeof module === "object") {
+      window.module = module;
+      module = undefined;
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script/script.js"></script>
+  <script>
+    if (window.module) module = window.module;
+  </script>
+
+  <script src="./script/backendCall.js"></script>
+</html>
