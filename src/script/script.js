@@ -3,10 +3,10 @@ $("span").click(function () {
   //checking input value length before displying the save contact div
   if ($("#output").val().length >= 9) {
     $(".contact-div").css("display", "block");
-    $(".call-div").css('display','block')
+    $(".call-div").css("display", "block");
   } else {
     $(".contact-div").css("display", "none");
-    $(".call-div").css('display','none')
+    $(".call-div").css("display", "none");
   }
   //resetting the input attr  to accept only 10 degit
   if ($("#output").val().length < 10) {
@@ -29,14 +29,10 @@ $("#clear").click(function () {
   $("#output").attr("value", newValue);
 });
 
-
 //show alert div on call
 $("#call").click(function () {
-    alert('CALL in proggress');
-})
-
-
-
+  alert("CALL in proggress");
+});
 
 //searching method for contact
 $("#searchContact").keyup(function () {
@@ -52,17 +48,6 @@ $("#searchContact").keyup(function () {
   });
 });
 
-//handle the condtion if a phone number = undfined for conatct page
-$(document).ready(function () {
-  $(".numberPhone").each(function () {
-    if ($(this).text() === "undefined") {
-      $(this).parent().css("display", "none");
-    } else {
-      $(this).parent().css("display", "block");
-    }
-  });
-});
-
 //searching method for contact
 $("#searchHistory").keyup(function () {
   var search = $("#searchHistory").val();
@@ -73,17 +58,6 @@ $("#searchHistory").keyup(function () {
       $(this).parent().css("display", "block");
     } else {
       $(this).parent().css("display", "none");
-    }
-  });
-});
-
-//handle the condtion if a phone number = undfined for history page
-$(document).ready(function () {
-  $(".datePhone").each(function () {
-    if ($(this).text() === "undefined") {
-      $(this).parent().css("display", "none");
-    } else {
-      $(this).parent().css("display", "block");
     }
   });
 });
