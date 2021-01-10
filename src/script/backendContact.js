@@ -22,21 +22,21 @@ window.addEventListener("load", () => {
         if (i != line.length - 1) {
           stringArray.push(" ");
         }
-    }
+      }
 
-    console.log(stringArray[0] + " " + stringArray[2]);
-    var container = document.createElement("div");
-    container.className = 'container';
-    var name = document.createElement("h1");
-    name.className = 'namePhone';
-    var number = document.createElement("p");
-    number.className = 'numberPhone'
-    name.innerHTML = stringArray[0];
-    number.innerHTML = stringArray[2];
+      console.log(stringArray[0] + " " + stringArray[2]);
+      var container = document.createElement("div");
+      container.className = "container";
+      var name = document.createElement("h1");
+      name.className = "namePhone";
+      var number = document.createElement("p");
+      number.className = "numberPhone";
+      name.innerHTML = stringArray[0];
+      number.innerHTML = stringArray[2];
 
-    container.appendChild(name);
-    container.appendChild(number);
-    showContact.appendChild(container);
+      container.appendChild(name);
+      container.appendChild(number);
+      showContact.appendChild(container);
     });
 });
 

@@ -21,7 +21,7 @@ btnSave.addEventListener("click", () => {
   if (name === "") {
     name = "UNKNOWN";
   }
-  fs.appendFileSync("\n" + pathNameContact, name + " " + phone, "UTF-8", {
+  fs.appendFileSync(pathNameContact, "\n" + name + " " + phone, "UTF-8", {
     flags: "a+",
   });
   output.removeAttribute("value");
@@ -43,7 +43,7 @@ btnCall.addEventListener("click", () => {
     ":" +
     today.getSeconds();
   let phone = output.value;
-  fs.appendFileSync("\n" + pathNameHistory, phone + " " + date, "UTF-8", {
+  fs.appendFileSync(pathNameHistory, "\n" + phone + " " + date, "UTF-8", {
     flags: "a+",
   });
   output.removeAttribute("value");
