@@ -29,15 +29,18 @@
 input[type="text"]{
 	width: 180px;
 }
-span{
-	background-color: #ddd;
+.numPad{
+  background-color: #ddd;
   font-size: 45px;
-  padding: 29px 45px;
+  padding: 15px 38px;
   border-radius: 50%;
   margin: 10px 10px 15px 15px;
 }
-
-span:hover{
+h6{
+  margin: 0;
+  font-size: 13px;
+}
+.numPad:hover{
   cursor:pointer;
   background-color: rgb(61, 57, 246);
   color: #ddd;

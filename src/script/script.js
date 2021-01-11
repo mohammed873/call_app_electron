@@ -1,5 +1,5 @@
 //setting the input value from the spans
-$("span").click(function () {
+$(".numPad").click(function () {
   //checking input value length before displying the save contact div
   if ($("#output").val().length >= 9) {
     $(".contact-div").css("display", "block");
@@ -10,7 +10,10 @@ $("span").click(function () {
   }
   //resetting the input attr  to accept only 10 degit
   if ($("#output").val().length < 10) {
-    $("#output").attr("value", $(".output").val() + $(this).text());
+    $("#output").attr(
+      "value",
+      $(".output").val() + $(this).children(".span").text()
+    );
   }
 });
 
