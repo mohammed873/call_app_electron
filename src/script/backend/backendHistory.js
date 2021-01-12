@@ -5,7 +5,7 @@ const fs = window.require("fs");
 const path = window.require("path");
 
 //specfying the file path
-let pathNameHistory = path.join(__dirname, "/files/history.txt");
+let pathNameHistory = path.join(__dirname, "/../files/history.txt");
 
 //calling DOM element
 var showHistory = document.getElementById("showHistory");

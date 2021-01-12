@@ -11,8 +11,8 @@ var contactName = document.getElementById("contactname");
 var divContact = document.getElementsByClassName("contact-div");
 
 //specfying the files path
-let pathNameContact = path.join(__dirname, "/files/contact.txt");
-let pathNameHistory = path.join(__dirname, "/files/history.txt");
+let pathNameContact = path.join(__dirname, "/../files/contact.txt");
+let pathNameHistory = path.join(__dirname, "/../files/history.txt");
 
 //saving new contact
 btnSave.addEventListener("click", () => {

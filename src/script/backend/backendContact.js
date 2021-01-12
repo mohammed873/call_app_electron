@@ -5,7 +5,7 @@ const fs = window.require("fs");
 const path = window.require("path");
 
 //specfying the file path
-let pathNameContact = path.join(__dirname, "/files/contact.txt");
+let pathNameContact = path.join(__dirname, "/../files/contact.txt");
 
 //calling DOM element
 var showContact = document.getElementById("showContact");
