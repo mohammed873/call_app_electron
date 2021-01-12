@@ -12,7 +12,6 @@ var showHistory = document.getElementById("showHistory");
 
 //read data from the history file
 window.addEventListener("load", () => {
-  console.log('window hhh')
   fs.readFileSync(pathNameHistory, "utf8")
     .split(/\r?\n/)
     .forEach(function (line) {
@@ -25,7 +24,7 @@ window.addEventListener("load", () => {
         }
     }
 
-    console.log(stringArray[0] + " " + stringArray[2]);
+
     var container = document.createElement("div");
     container.className = 'container';
     var number = document.createElement("h1");
@@ -37,7 +36,7 @@ window.addEventListener("load", () => {
 
     container.appendChild(number);
     container.appendChild(date);
-    console.log(container);
+    
     showHistory.appendChild(container);
     });
 });
